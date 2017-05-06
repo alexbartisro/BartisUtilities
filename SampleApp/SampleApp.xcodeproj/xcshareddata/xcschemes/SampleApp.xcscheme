@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA1846351EBCF37B003D4E79"
-               BuildableName = "BartisUtilities.framework"
-               BlueprintName = "BartisUtilities"
-               ReferencedContainer = "container:BartisUtilities.xcodeproj">
+               BlueprintIdentifier = "FA1846581EBCF3D3003D4E79"
+               BuildableName = "SampleApp.app"
+               BlueprintName = "SampleApp"
+               ReferencedContainer = "container:SampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,17 +35,17 @@
                BlueprintIdentifier = "FA18463E1EBCF37B003D4E79"
                BuildableName = "BartisUtilitiesTests.xctest"
                BlueprintName = "BartisUtilitiesTests"
-               ReferencedContainer = "container:BartisUtilities.xcodeproj">
+               ReferencedContainer = "container:../BartisUtilities.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA1846351EBCF37B003D4E79"
-            BuildableName = "BartisUtilities.framework"
-            BlueprintName = "BartisUtilities"
-            ReferencedContainer = "container:BartisUtilities.xcodeproj">
+            BlueprintIdentifier = "FA1846581EBCF3D3003D4E79"
+            BuildableName = "SampleApp.app"
+            BlueprintName = "SampleApp"
+            ReferencedContainer = "container:SampleApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA1846351EBCF37B003D4E79"
-            BuildableName = "BartisUtilities.framework"
-            BlueprintName = "BartisUtilities"
-            ReferencedContainer = "container:BartisUtilities.xcodeproj">
+            BlueprintIdentifier = "FA1846581EBCF3D3003D4E79"
+            BuildableName = "SampleApp.app"
+            BlueprintName = "SampleApp"
+            ReferencedContainer = "container:SampleApp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA1846351EBCF37B003D4E79"
-            BuildableName = "BartisUtilities.framework"
-            BlueprintName = "BartisUtilities"
-            ReferencedContainer = "container:BartisUtilities.xcodeproj">
+            BlueprintIdentifier = "FA1846581EBCF3D3003D4E79"
+            BuildableName = "SampleApp.app"
+            BlueprintName = "SampleApp"
+            ReferencedContainer = "container:SampleApp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

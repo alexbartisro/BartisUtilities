@@ -1,0 +1,26 @@
+notifications:
+  email:
+    recipients:
+      - 5t9mpx8vtb@pomail.net
+    on_success: always
+    on_failure: always
+
+before_install:
+    - rvm install 2.4.0
+    - gem install activesupport -v 4.2.6 --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
+    - gem install slather
+
+language: objective-c  #1
+osx_image: xcode8.3 #2
+xcode_workspace: BartisUtilities.xcworkspace #3
+xcode_scheme: BartisUtilities #4
+
+script:
+- set -o pipefail && xcodebuild -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+
+after_success: 
+  - slather coverage
+  - bash <(curl -s https://codecov.io/bash) -f xml_report/cobertura.xml -X coveragepy -X gcov -X xcode
+

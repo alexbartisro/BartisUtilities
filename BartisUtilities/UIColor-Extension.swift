@@ -12,10 +12,9 @@ import UIKit
 // Source http://stackoverflow.com/a/33397427/2984775
 
 public extension UIColor {
+    ///   Create an UIColor object based on a hex string
     ///
-    /// Test test test
-    ///
-
+    /// - Parameter hexString: a hex string describing a color
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: NSCharacterSet.alphanumerics.inverted)
         var int = UInt32()
@@ -34,6 +33,9 @@ public extension UIColor {
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 
+    /// Method that returns an UIColor in a hex string
+    ///
+    /// - Returns: UIColor hex String
     func toHexString() -> String {
         var r:CGFloat = 0
         var g:CGFloat = 0

@@ -12,6 +12,10 @@
 		FA1846471EBCF37B003D4E79 /* BartisUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1846391EBCF37B003D4E79 /* BartisUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1846721EBCF582003D4E79 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846711EBCF582003D4E79 /* UIColor-Extension.swift */; };
 		FA1846741EBD799E003D4E79 /* ThemableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846731EBD799E003D4E79 /* ThemableViews.swift */; };
+		FA1846761EBD7FEB003D4E79 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846751EBD7FEB003D4E79 /* String-Extension.swift */; };
+		FA1846781EBD87AF003D4E79 /* BartisUtilities_StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */; };
+		FA18467A1EBD91DB003D4E79 /* PropertyLoopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */; };
+		FA18467C1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 		FA1846461EBCF37B003D4E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1846711EBCF582003D4E79 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		FA1846731EBD799E003D4E79 /* ThemableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemableViews.swift; sourceTree = "<group>"; };
+		FA1846751EBD7FEB003D4E79 /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_StringTests.swift; sourceTree = "<group>"; };
+		FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyLoopable.swift; sourceTree = "<group>"; };
+		FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_PropertyLoopableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,10 @@
 			children = (
 				FA1846391EBCF37B003D4E79 /* BartisUtilities.h */,
 				FA18463A1EBCF37B003D4E79 /* Info.plist */,
+				FA1846751EBD7FEB003D4E79 /* String-Extension.swift */,
 				FA1846711EBCF582003D4E79 /* UIColor-Extension.swift */,
 				FA1846731EBD799E003D4E79 /* ThemableViews.swift */,
+				FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */,
 			);
 			path = BartisUtilities;
 			sourceTree = "<group>";
@@ -86,8 +96,10 @@
 		FA1846431EBCF37B003D4E79 /* BartisUtilitiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA1846441EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift */,
 				FA1846461EBCF37B003D4E79 /* Info.plist */,
+				FA1846441EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift */,
+				FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */,
+				FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */,
 			);
 			path = BartisUtilitiesTests;
 			sourceTree = "<group>";
@@ -205,8 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA18467A1EBD91DB003D4E79 /* PropertyLoopable.swift in Sources */,
 				FA1846721EBCF582003D4E79 /* UIColor-Extension.swift in Sources */,
 				FA1846741EBD799E003D4E79 /* ThemableViews.swift in Sources */,
+				FA1846761EBD7FEB003D4E79 /* String-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1846781EBD87AF003D4E79 /* BartisUtilities_StringTests.swift in Sources */,
+				FA18467C1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift in Sources */,
 				FA1846451EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

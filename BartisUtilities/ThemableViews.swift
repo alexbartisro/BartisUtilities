@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/// Classes to be subclassed in order to set theming
+/// without setting theming for a base SDK object
+
 public class ThemableTableView: UITableView {}
 public class ThemableTableViewLabel: UILabel {}
 public class ThemableTableViewCell: UITableViewCell {}
