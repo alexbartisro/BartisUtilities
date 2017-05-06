@@ -1,0 +1,7 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+workspace: BartisUtilities.workspace
+xcodeproj: BartisUtilities.xcodeproj
+scheme: BartisUtilities
+output_directory: xml_report

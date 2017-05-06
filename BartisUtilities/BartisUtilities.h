@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double BartisUtilitiesVersionNumber;
 FOUNDATION_EXPORT const unsigned char BartisUtilitiesVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BartisUtilities/PublicHeader.h>
-
-

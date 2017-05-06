@@ -1,0 +1,26 @@
+notifications:
+  email:
+    recipients:
+      - secure: "Mo3zfahdVHW21EmKRBGHixiFGwuTCCRuxD8j6E05brgLze8ffttLxzVsqTndfRgfXVHih7ysasbB9Hs3DqeRZdbqoqCBOWiGh0/l7v2i8IKa7lIhFSnzEJFCrzCbWEd+Um+qqpzzIKHVA2bVqJNzlTXZfkhaMN8FpzwJeYXWcg7TNhmAz3S5UC00SoH/M8Z2ruj1WRJxw6y5/+uQgMydrQQAIBMHmDuiG/Y3Wr00pLd8qgIsKjYd2bK3qFb4kkekG6GiG1v88Z5yHAYKl7DdzIBTSXZU+xhPP/UoFLQPwDEC/RN6dyj8zUGzQWkGT5plce1+ler4wsVKdIF1R7kC3NS2gyR5QDgU45wSb3c8GPo3BkFID74lw5kV2v9Dc9K7yz5RhLyjwG8zkEPfzU7lVzrcbOsCwdZIXaUa1Hn1eZb2IiBl6RvONtRuqiV6nDM8S2Go/J7Rqy1GjLJA+vSmrZmn/JbWguqdQDVEr8+AepEkOyT9zvcbaiPD9A5EotnB5//i7AzJgMSKGyTxukYXAvKRnGEZH0Ii+kpdQtgMW2ywi35ZDN13ogxyhelicePbO8iy4UKoMJc95pU1tPA5oXAjCBAItJn77qROpDWPSO21SZ0388VH6jiiKgaO03885zTATT+kJIJ+d4u10z0BAGV9PILYHCGSNUFmLtrHlgU="
+    on_success: always
+    on_failure: always
+
+before_install:
+    - rvm install 2.4.0
+    - gem install activesupport -v 4.2.6 --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
+    - gem install slather
+
+language: objective-c  #1
+osx_image: xcode8.3 #2
+xcode_workspace: BartisUtilities.xcworkspace #3
+xcode_scheme: BartisUtilities #4
+
+script:
+- set -o pipefail && xcodebuild -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+
+after_success: 
+  - slather coverage
+  - bash <(curl -s https://codecov.io/bash) -f xml_report/cobertura.xml -X coveragepy -X gcov -X xcode
+
