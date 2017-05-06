@@ -1,6 +1,6 @@
 //
-//  BartisUtilitiesTests.swift
-//  BartisUtilitiesTests
+//  BartisUtilities_UIColorTests.swift
+//  BartisUtilities_UIColorTests
 //
 //  Created by Alex Bartis on 05/05/2017.
 //  Copyright © 2017 Alex Bartis. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import BartisUtilities
 
-class BartisUtilitiesTests: XCTestCase {
+class BartisUtilities_UIColorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,9 +21,12 @@ class BartisUtilitiesTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_UIColor_fromHex_toHex_success() {
+        //Given
+        let whiteColor = UIColor(hexString: "#ffffff").toHexString()
+
+        //Then
+        XCTAssertTrue(whiteColor == UIColor.white.toHexString(), "Expected to be the same color")
     }
     
     func testPerformanceExample() {
@@ -32,5 +35,4 @@ class BartisUtilitiesTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }
