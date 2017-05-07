@@ -16,6 +16,13 @@
 		FA1846781EBD87AF003D4E79 /* BartisUtilities_StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */; };
 		FA18467A1EBD91DB003D4E79 /* PropertyLoopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */; };
 		FA18467C1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */; };
+		FA48CF271EBEECC4007D9F8F /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF261EBEECC4007D9F8F /* HTTPRequester.swift */; };
+		FA48CF291EBEECF4007D9F8F /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF281EBEECF4007D9F8F /* HTTPRequest.swift */; };
+		FA48CF2B1EBEF00A007D9F8F /* Dictionary-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF2A1EBEF00A007D9F8F /* Dictionary-Extension.swift */; };
+		FA48CF2D1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF2C1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift */; };
+		FA48CF2F1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */; };
+		FAE783831EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */; };
+		FAE783851EC0F326006BB39A /* DispatchQueue-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,13 @@
 		FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_StringTests.swift; sourceTree = "<group>"; };
 		FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyLoopable.swift; sourceTree = "<group>"; };
 		FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_PropertyLoopableTests.swift; sourceTree = "<group>"; };
+		FA48CF261EBEECC4007D9F8F /* HTTPRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequester.swift; sourceTree = "<group>"; };
+		FA48CF281EBEECF4007D9F8F /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		FA48CF2A1EBEF00A007D9F8F /* Dictionary-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary-Extension.swift"; sourceTree = "<group>"; };
+		FA48CF2C1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_HTTPRequestTests.swift; sourceTree = "<group>"; };
+		FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_DictionaryTests.swift; sourceTree = "<group>"; };
+		FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_HTTPRequesterTests.swift; sourceTree = "<group>"; };
+		FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +101,12 @@
 				FA18463A1EBCF37B003D4E79 /* Info.plist */,
 				FA1846751EBD7FEB003D4E79 /* String-Extension.swift */,
 				FA1846711EBCF582003D4E79 /* UIColor-Extension.swift */,
+				FA48CF2A1EBEF00A007D9F8F /* Dictionary-Extension.swift */,
 				FA1846731EBD799E003D4E79 /* ThemableViews.swift */,
 				FA1846791EBD91DB003D4E79 /* PropertyLoopable.swift */,
+				FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */,
+				FA48CF281EBEECF4007D9F8F /* HTTPRequest.swift */,
+				FA48CF261EBEECC4007D9F8F /* HTTPRequester.swift */,
 			);
 			path = BartisUtilities;
 			sourceTree = "<group>";
@@ -100,6 +118,9 @@
 				FA1846441EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift */,
 				FA1846771EBD87AF003D4E79 /* BartisUtilities_StringTests.swift */,
 				FA18467B1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift */,
+				FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */,
+				FA48CF2C1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift */,
+				FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */,
 			);
 			path = BartisUtilitiesTests;
 			sourceTree = "<group>";
@@ -217,10 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA48CF271EBEECC4007D9F8F /* HTTPRequester.swift in Sources */,
 				FA18467A1EBD91DB003D4E79 /* PropertyLoopable.swift in Sources */,
+				FA48CF2B1EBEF00A007D9F8F /* Dictionary-Extension.swift in Sources */,
 				FA1846721EBCF582003D4E79 /* UIColor-Extension.swift in Sources */,
+				FA48CF291EBEECF4007D9F8F /* HTTPRequest.swift in Sources */,
 				FA1846741EBD799E003D4E79 /* ThemableViews.swift in Sources */,
 				FA1846761EBD7FEB003D4E79 /* String-Extension.swift in Sources */,
+				FAE783851EC0F326006BB39A /* DispatchQueue-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE783831EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift in Sources */,
 				FA1846781EBD87AF003D4E79 /* BartisUtilities_StringTests.swift in Sources */,
+				FA48CF2D1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift in Sources */,
 				FA18467C1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift in Sources */,
 				FA1846451EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift in Sources */,
+				FA48CF2F1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.BartisUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -22,9 +22,9 @@ public extension String {
         if self.characters.count > length {
             let endIndex = self.index(self.startIndex, offsetBy: length)
             return self.substring(to: endIndex) + trailing
-        } else {
-            return self
         }
+
+        return self
     }
 
     /// Returns the character at index i in a string

@@ -12,22 +12,22 @@ import UIKit
 /// Classes to be subclassed in order to set theming
 /// without setting theming for a base SDK object
 
-public class ThemableTableView: UITableView {}
-public class ThemableTableViewLabel: UILabel {}
-public class ThemableTableViewCell: UITableViewCell {}
-public class ThemableTableViewHeader: UITableViewHeaderFooterView {}
-public class ThemableTableViewHeaderLabel: UILabel {}
+open class ThemableTableView: UITableView {}
+open class ThemableTableViewLabel: UILabel {}
+open class ThemableTableViewCell: UITableViewCell {}
+open class ThemableTableViewHeader: UITableViewHeaderFooterView {}
+open class ThemableTableViewHeaderLabel: UILabel {}
 
-public class ThemableCollectionView: UICollectionView {}
-public class ThemableCollectionUpperLabel: UILabel {}
-public class ThemableCollectionCellSeparator: UIView {}
+open class ThemableCollectionView: UICollectionView {}
+open class ThemableCollectionUpperLabel: UILabel {}
+open class ThemableCollectionCellSeparator: UIView {}
 
-public class ThemableLabel: UILabel {}
-public class ThemableButton: UIButton {}
-public class ThemablePopupButton: UIButton {}
-public class ThemablePopupView: UIView {}
-public class ThemableUIView: UIView {}
+open class ThemableLabel: UILabel {}
+open class ThemableButton: UIButton {}
+open class ThemablePopupButton: UIButton {}
+open class ThemablePopupView: UIView {}
+open class ThemableUIView: UIView {}
 
-public class ThemableSegmentedControl: UISegmentedControl {}
-public class ThemableRunwayInformationView: UIView {}
-public class ThemableRunwayInformationLabel: UILabel {}
+open class ThemableSegmentedControl: UISegmentedControl {}
+open class ThemableRunwayInformationView: UIView {}
+open class ThemableRunwayInformationLabel: UILabel {}
