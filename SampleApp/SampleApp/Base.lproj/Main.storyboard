@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,22 +23,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-AJ-rt8">
-                                <rect key="frame" x="16" y="28" width="177" height="30"/>
+                                <rect key="frame" x="16" y="40" width="139" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8aZ-Rk-27b"/>
                                 </constraints>
-                                <state key="normal" title="Change background color"/>
+                                <state key="normal" title="Change bkgnd color"/>
                                 <connections>
                                     <action selector="setBackgroundColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEw-ZL-eb7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWf-ay-v0O">
+                                <rect key="frame" x="16" y="90" width="139" height="30"/>
+                                <state key="normal" title="Truncate text"/>
+                                <connections>
+                                    <action selector="truncateText" destination="BYZ-38-t0r" eventType="touchUpInside" id="czc-SV-d8g"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert any text here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-l6-uzL">
+                                <rect key="frame" x="16" y="140" width="323" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="MIA-os-SFm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Truncate to leght" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQU-Oa-tAP">
+                                <rect key="frame" x="175" y="90" width="164" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xQU-Oa-tAP" firstAttribute="trailing" secondItem="Vfl-l6-uzL" secondAttribute="trailing" id="3Hd-Lb-4Mm"/>
+                            <constraint firstItem="xQU-Oa-tAP" firstAttribute="bottom" secondItem="YWf-ay-v0O" secondAttribute="bottom" id="5Cq-Kw-IaG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vfl-l6-uzL" secondAttribute="trailing" constant="20" id="Ai2-Rz-Fwm"/>
+                            <constraint firstItem="YWf-ay-v0O" firstAttribute="trailing" secondItem="BeN-AJ-rt8" secondAttribute="trailing" id="Epy-z6-Sb5"/>
                             <constraint firstItem="BeN-AJ-rt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Ngc-Kf-NAh"/>
-                            <constraint firstItem="BeN-AJ-rt8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xcg-tP-tly"/>
+                            <constraint firstItem="YWf-ay-v0O" firstAttribute="leading" secondItem="BeN-AJ-rt8" secondAttribute="leading" id="Pnh-Ge-RU7"/>
+                            <constraint firstItem="Vfl-l6-uzL" firstAttribute="top" secondItem="YWf-ay-v0O" secondAttribute="bottom" constant="20" id="dLu-JW-Ar8"/>
+                            <constraint firstItem="YWf-ay-v0O" firstAttribute="top" secondItem="BeN-AJ-rt8" secondAttribute="bottom" constant="20" id="isW-Qj-Lo4"/>
+                            <constraint firstItem="xQU-Oa-tAP" firstAttribute="leading" secondItem="YWf-ay-v0O" secondAttribute="trailing" constant="20" id="nsp-9n-uo9"/>
+                            <constraint firstItem="xQU-Oa-tAP" firstAttribute="top" secondItem="YWf-ay-v0O" secondAttribute="top" id="qgs-af-PN4"/>
+                            <constraint firstItem="BeN-AJ-rt8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xcg-tP-tly"/>
+                            <constraint firstItem="Vfl-l6-uzL" firstAttribute="leading" secondItem="YWf-ay-v0O" secondAttribute="leading" id="y9Z-wI-8wM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="truncateLenghtLabel" destination="xQU-Oa-tAP" id="42V-aW-F1h"/>
+                        <outlet property="truncatedTextView" destination="Vfl-l6-uzL" id="4HM-dt-A62"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
