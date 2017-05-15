@@ -62,6 +62,18 @@ class BartisUtilities_StringTests: XCTestCase {
         XCTAssertTrue(truncatedString.characters.count == aVeryLongString.characters.count, "Expected the lenght to be identical")
     }
 
+//    func test_String_truncateToLenght_noTrailingString_lenghtShorterThenString() {
+//        //Given
+//        let expectedLenght = aVeryLongString.characters.count + 1
+//
+//        //When
+//        let truncatedString = aVeryLongString.trunc(length: expectedLenght)
+//
+//        //Then
+//        XCTAssertTrue(truncatedString != expectedString, "Expected the strings to be different")
+//        XCTAssertTrue(truncatedString.characters.count == aVeryLongString.characters.count, "Expected the lenght to be identical")
+//    }
+
     func test_String_truncateToLenght_givenTrailingString() {
         //Given
         let aVeryLongString = "This is a very long string"
