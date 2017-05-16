@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BartisUtilities-Universal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>BartisUtilities.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>BartisUtilities.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FA0F2AFB1ECB808600248D23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FA1846351EBCF37B003D4E79</key>
 		<dict>
 			<key>primary</key>
