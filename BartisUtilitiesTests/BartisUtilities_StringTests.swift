@@ -96,6 +96,7 @@ class BartisUtilities_StringTests: XCTestCase {
         //When
         let outputCharacter: Character = aVeryLongString[indexOfChar]
 
+        //Then
         XCTAssertTrue(outputCharacter == expectedCharacter, "Expected the character at index \(indexOfChar) to be \(expectedCharacter)")
     }
 
@@ -107,6 +108,26 @@ class BartisUtilities_StringTests: XCTestCase {
         //When
         let outputCharacter: String = aVeryLongString[indexOfChar]
 
+        //Then
         XCTAssertTrue(outputCharacter == expectedCharacter, "Expected the character at index \(indexOfChar) to be \(expectedCharacter)")
+    }
+
+    func test_String_urlFromString_success() {
+        //Given
+        let urlString = "www.url.test"
+        let expectedURL = URL(string: urlString)
+
+        //When & Then
+        XCTAssertEqual(expectedURL, urlString.url(), "Expected the URLs to be identical")
+    }
+
+    func test_String_urlFromString_failed() {
+        //Given
+        let urlString = "☭"
+
+        //When & Then
+        expectFatalError(expectedMessage: "Cannot create URL from this string") {
+            let _ = urlString.url()
+        }
     }
 }

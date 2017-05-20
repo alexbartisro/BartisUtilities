@@ -40,4 +40,15 @@ public extension String {
     subscript (i: Int) -> String {
         return String(self[i] as Character)
     }
+
+    /// URL from string
+    ///
+    /// - Returns: URL
+    func url() -> URL {
+        guard let url = URL(string: self) else {
+            fatalError("Cannot create URL from this string")
+        }
+
+        return url
+    }
 }
