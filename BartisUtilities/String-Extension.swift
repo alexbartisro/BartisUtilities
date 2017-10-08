@@ -21,7 +21,7 @@ public extension String {
     func trunc(length: Int, trailing: String = "...") -> String {
         if self.characters.count > length {
             let endIndex = self.index(self.startIndex, offsetBy: length)
-            return self.substring(to: endIndex) + trailing
+            return self[self.startIndex..<endIndex] + trailing
         }
 
         return self
@@ -46,7 +46,7 @@ public extension String {
     /// - Returns: URL
     func url() -> URL {
         guard let url = URL(string: self) else {
-            fatalError("Cannot create URL from this string")
+            return NSURLComponents().url!
         }
 
         return url
