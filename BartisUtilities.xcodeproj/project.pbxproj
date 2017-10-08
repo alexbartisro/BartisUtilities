@@ -37,8 +37,6 @@
 		FA48CF2F1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */; };
 		FAE783831EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */; };
 		FAE783851EC0F326006BB39A /* DispatchQueue-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */; };
-		FAEA874D1ED5E68800720385 /* FatalErrorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA874C1ED5E68800720385 /* FatalErrorUtil.swift */; };
-		FAEA874F1ED5E6B100720385 /* XCTestCase-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA874E1ED5E6B100720385 /* XCTestCase-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +69,6 @@
 		FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_DictionaryTests.swift; sourceTree = "<group>"; };
 		FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartisUtilities_HTTPRequesterTests.swift; sourceTree = "<group>"; };
 		FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue-Extension.swift"; sourceTree = "<group>"; };
-		FAEA874C1ED5E68800720385 /* FatalErrorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatalErrorUtil.swift; sourceTree = "<group>"; };
-		FAEA874E1ED5E6B100720385 /* XCTestCase-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +121,6 @@
 				FAE783841EC0F326006BB39A /* DispatchQueue-Extension.swift */,
 				FA48CF281EBEECF4007D9F8F /* HTTPRequest.swift */,
 				FA48CF261EBEECC4007D9F8F /* HTTPRequester.swift */,
-				FAEA874C1ED5E68800720385 /* FatalErrorUtil.swift */,
 			);
 			path = BartisUtilities;
 			sourceTree = "<group>";
@@ -140,7 +135,6 @@
 				FA48CF2E1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift */,
 				FA48CF2C1EBEF3EF007D9F8F /* BartisUtilities_HTTPRequestTests.swift */,
 				FAE783821EC0EC62006BB39A /* BartisUtilities_HTTPRequesterTests.swift */,
-				FAEA874E1ED5E6B100720385 /* XCTestCase-Extension.swift */,
 			);
 			path = BartisUtilitiesTests;
 			sourceTree = "<group>";
@@ -202,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Alex Bartis";
 				TargetAttributes = {
 					FA0F2AFB1ECB808600248D23 = {
@@ -213,12 +207,13 @@
 					FA1846351EBCF37B003D4E79 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JEW4ZQXUL9;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					FA18463E1EBCF37B003D4E79 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JEW4ZQXUL9;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -283,7 +278,6 @@
 				FA48CF271EBEECC4007D9F8F /* HTTPRequester.swift in Sources */,
 				FA18467A1EBD91DB003D4E79 /* PropertyLoopable.swift in Sources */,
 				FA48CF2B1EBEF00A007D9F8F /* Dictionary-Extension.swift in Sources */,
-				FAEA874D1ED5E68800720385 /* FatalErrorUtil.swift in Sources */,
 				FA1846721EBCF582003D4E79 /* UIColor-Extension.swift in Sources */,
 				FA48CF291EBEECF4007D9F8F /* HTTPRequest.swift in Sources */,
 				FA1846741EBD799E003D4E79 /* ThemableViews.swift in Sources */,
@@ -302,7 +296,6 @@
 				FA18467C1EBD937F003D4E79 /* BartisUtilities_PropertyLoopableTests.swift in Sources */,
 				FA1846451EBCF37B003D4E79 /* BartisUtilities_UIColorTests.swift in Sources */,
 				FA48CF2F1EBEF4A5007D9F8F /* BartisUtilities_DictionaryTests.swift in Sources */,
-				FAEA874F1ED5E6B100720385 /* XCTestCase-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +338,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -353,7 +348,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +382,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -399,7 +399,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -407,7 +409,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -429,6 +435,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -455,7 +462,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -478,8 +486,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.BartisUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -493,7 +502,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.BartisUtilitiesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -506,7 +516,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.BartisUtilitiesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

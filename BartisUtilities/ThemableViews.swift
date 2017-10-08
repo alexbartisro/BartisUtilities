@@ -20,7 +20,6 @@ open class ThemableTableViewHeaderLabel: UILabel {}
 
 open class ThemableCollectionView: UICollectionView {}
 open class ThemableCollectionUpperLabel: UILabel {}
-open class ThemableCollectionCellSeparator: UIView {}
 
 open class ThemableLabel: UILabel {}
 open class ThemableButton: UIButton {}
@@ -29,5 +28,3 @@ open class ThemablePopupView: UIView {}
 open class ThemableUIView: UIView {}
 
 open class ThemableSegmentedControl: UISegmentedControl {}
-open class ThemableRunwayInformationView: UIView {}
-open class ThemableRunwayInformationLabel: UILabel {}

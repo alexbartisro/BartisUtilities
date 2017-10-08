@@ -126,8 +126,7 @@ class BartisUtilities_StringTests: XCTestCase {
         let urlString = "☭"
 
         //When & Then
-        expectFatalError(expectedMessage: "Cannot create URL from this string") {
-            let _ = urlString.url()
-        }
+        let expectedURL = urlString.url()
+        XCTAssertTrue(expectedURL.absoluteString.isEmpty, "Expected the URL to be empty")
     }
 }

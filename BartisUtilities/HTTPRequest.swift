@@ -72,6 +72,7 @@ public enum Method: String {
     case Put = "PUT"
     case Post = "POST"
     case Delete = "DELETE"
+    case Patch = "PATCH"
 }
 
 //MARK - HTTPRequestError

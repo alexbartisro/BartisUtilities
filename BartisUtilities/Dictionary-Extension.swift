@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension Dictionary where Key: Hashable, Value: Hashable {
+public extension Dictionary {
     /// Property describing the dictionary as a query string
     var queryString: String? {
 
