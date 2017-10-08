@@ -10,6 +10,8 @@ BartisUtilities is an utility framework for my most frequest used stuff.
 
 Available documentation [here](https://cdn.rawgit.com/trusk89/BartisUtilities/master/docs/index.html)
 
+Swift 4.0 & Xcode 9.0 Ready
+
 --------------------
 
 Universal framework merging script from [maqdev](https://gist.github.com/maqdev/b62106128b0e00972598/f2263868ab2c78e23ee30029d3db2c86819184cc)
