@@ -19,7 +19,7 @@ public extension String {
     ///   - trailing: String describing how to end the truncated text
     /// - Returns: A truncated string finishing with a given string
     func trunc(length: Int, trailing: String = "...") -> String {
-        if self.characters.count > length {
+        if self.count > length {
             let endIndex = self.index(self.startIndex, offsetBy: length)
             return self[self.startIndex..<endIndex] + trailing
         }

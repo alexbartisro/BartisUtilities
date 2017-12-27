@@ -10,7 +10,7 @@ BartisUtilities is an utility framework for my most frequest used stuff.
 
 Available documentation [here](https://cdn.rawgit.com/trusk89/BartisUtilities/master/docs/index.html)
 
-Swift 4.0 & Xcode 9.0 Ready
+Swift 4.0.2 & Xcode 9.2 Ready
 
 --------------------
 
