@@ -28,64 +28,64 @@ class BartisUtilities_StringTests: XCTestCase {
 
     func test_String_truncateToLenght_noTrailingString() {
         //Given
-        let trailingLenght = "...".characters.count
+        let trailingLenght = "...".count
 
         //When
         let truncatedString = aVeryLongString.trunc(length: expectedLenght)
 
         //Then
         XCTAssertTrue(truncatedString == expectedString, "Expected the strings to be identical")
-        XCTAssertTrue(truncatedString.characters.count == expectedLenght + trailingLenght, "Expected the lenght to be identical")
+        XCTAssertTrue(truncatedString.count == expectedLenght + trailingLenght, "Expected the lenght to be identical")
     }
 
     func test_String_truncateToLenght_noTrailingString_lenghtLongerThanString() {
         //Given
-        let expectedLenght = aVeryLongString.characters.count + 1
+        let expectedLenght = aVeryLongString.count + 1
 
         //When
         let truncatedString = aVeryLongString.trunc(length: expectedLenght)
 
         //Then
         XCTAssertTrue(truncatedString != expectedString, "Expected the strings to be different")
-        XCTAssertTrue(truncatedString.characters.count == aVeryLongString.characters.count, "Expected the lenght to be identical")
+        XCTAssertTrue(truncatedString.count == aVeryLongString.count, "Expected the lenght to be identical")
     }
 
     func test_String_truncateToLenght_noTrailingString_lenghtEqualToString() {
         //Given
-        let expectedLenght = aVeryLongString.characters.count
+        let expectedLenght = aVeryLongString.count
 
         //When
         let truncatedString = aVeryLongString.trunc(length: expectedLenght)
 
         //Then
         XCTAssertTrue(truncatedString != expectedString, "Expected the strings to be different")
-        XCTAssertTrue(truncatedString.characters.count == aVeryLongString.characters.count, "Expected the lenght to be identical")
+        XCTAssertTrue(truncatedString.count == aVeryLongString.count, "Expected the lenght to be identical")
     }
 
 //    func test_String_truncateToLenght_noTrailingString_lenghtShorterThenString() {
 //        //Given
-//        let expectedLenght = aVeryLongString.characters.count + 1
+//        let expectedLenght = aVeryLongString.count + 1
 //
 //        //When
 //        let truncatedString = aVeryLongString.trunc(length: expectedLenght)
 //
 //        //Then
 //        XCTAssertTrue(truncatedString != expectedString, "Expected the strings to be different")
-//        XCTAssertTrue(truncatedString.characters.count == aVeryLongString.characters.count, "Expected the lenght to be identical")
+//        XCTAssertTrue(truncatedString.count == aVeryLongString.count, "Expected the lenght to be identical")
 //    }
 
     func test_String_truncateToLenght_givenTrailingString() {
         //Given
         let aVeryLongString = "This is a very long string"
         let expectedString = "This is a very l///"
-        let trailingLenght = "...".characters.count
+        let trailingLenght = "...".count
 
         //When
         let truncatedString = aVeryLongString.trunc(length: expectedLenght, trailing: "///")
 
         //Then
         XCTAssertTrue(truncatedString == expectedString, "Expected the strings to be identical")
-        XCTAssertTrue(truncatedString.characters.count == expectedLenght + trailingLenght, "Expected the lenght to be identical")
+        XCTAssertTrue(truncatedString.count == expectedLenght + trailingLenght, "Expected the lenght to be identical")
     }
 
     func test_String_CharaterAtIndex() {

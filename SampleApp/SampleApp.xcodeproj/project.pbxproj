@@ -12,7 +12,7 @@
 		FA1846621EBCF3D3003D4E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1846601EBCF3D3003D4E79 /* Main.storyboard */; };
 		FA1846641EBCF3D3003D4E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1846631EBCF3D3003D4E79 /* Assets.xcassets */; };
 		FA1846671EBCF3D3003D4E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1846651EBCF3D3003D4E79 /* LaunchScreen.storyboard */; };
-		FA1846701EBCF3EC003D4E79 /* BartisUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA18466F1EBCF3EC003D4E79 /* BartisUtilities.framework */; };
+		FA1FBC1D1F89EC1600B4080E /* BartisUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1FBC1C1F89EC0400B4080E /* BartisUtilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		FA1846631EBCF3D3003D4E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1846661EBCF3D3003D4E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1846681EBCF3D3003D4E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA18466F1EBCF3EC003D4E79 /* BartisUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BartisUtilities.framework; path = "../build/Debug-iphoneos/BartisUtilities.framework"; sourceTree = "<group>"; };
+		FA1FBC1C1F89EC0400B4080E /* BartisUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BartisUtilities.framework; path = "../Output/BartisUtilities-Debug-iphoneuniversal/BartisUtilities.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1846701EBCF3EC003D4E79 /* BartisUtilities.framework in Frameworks */,
+				FA1FBC1D1F89EC1600B4080E /* BartisUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,7 @@
 		FA18466E1EBCF3EB003D4E79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA18466F1EBCF3EC003D4E79 /* BartisUtilities.framework */,
+				FA1FBC1C1F89EC0400B4080E /* BartisUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
