@@ -25,7 +25,7 @@ public extension PropertyLoopable {
     ///
     /// - Returns: An array of strings describing the object's properties
     func allProperties() -> [String] {
-        return Mirror(reflecting: self).children.flatMap { $0.label }
+        return Mirror(reflecting: self).children.compactMap { $0.label }
     }
 
     /// A method that returnts an array of strings which are the
@@ -33,6 +33,6 @@ public extension PropertyLoopable {
     ///
     /// - Returns: An array of the object's property values
     func allValues() -> [String] {
-        return Mirror(reflecting: self).children.flatMap { $0.value as? String }
+        return Mirror(reflecting: self).children.compactMap { $0.value as? String }
     }
 }
