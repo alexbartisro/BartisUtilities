@@ -13,12 +13,12 @@ before_install:
     - gem install slather
 
 language: objective-c  #1
-osx_image: xcode9.2 #2
+osx_image: xcode9.3beta #2
 xcode_workspace: BartisUtilities.xcworkspace #3
 xcode_scheme: BartisUtilities #4
 
 script:
-- set -o pipefail && xcodebuild -enableCodeCoverage YES -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone 8 Plus,OS=11.2' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+- set -o pipefail && xcodebuild -enableCodeCoverage YES -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone X,OS=11.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 
 after_success: 
   - slather coverage
