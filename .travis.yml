@@ -18,7 +18,7 @@ xcode_workspace: BartisUtilities.xcworkspace #3
 xcode_scheme: BartisUtilities #4
 
 script:
-- set -o pipefail && xcodebuild -enableCodeCoverage YES -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.0' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+- set -o pipefail && xcodebuild -enableCodeCoverage YES -sdk iphonesimulator -workspace BartisUtilities.xcworkspace -scheme BartisUtilities clean build test -destination 'platform=iOS Simulator,name=iPhone XROS=12.0' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 
 after_success: 
   - slather coverage

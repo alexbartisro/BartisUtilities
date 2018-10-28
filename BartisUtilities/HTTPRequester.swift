@@ -8,16 +8,22 @@
 
 import Foundation
 
+public protocol HTTPRequesterDelegate: class {
+    func didReceive(_ response: HTTPResponse)
+    func didReceive(_ error: Error)
+}
+
 public class HTTPRequester {
 
+    public static weak var delegate: HTTPRequesterDelegate?
+    
     /// Method that executes a URLRequest based on an 
-    /// a HTTPRequest object. Completion is called on 
-    /// the main thread
+    /// a HTTPRequest object. Response is sent back to
+    /// the delegate on the main thread
     ///
     /// - Parameters:
     ///   - request: HTTPRequest to be executed
-    ///   - completionHandler: Callback with Data, URLResponse and Error (Data?, URLResponse?, Error?)
-    public static func execute(_ request: HTTPRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) {
+    public static func execute(_ request: HTTPRequest) {
         var urlRequest = URLRequest(url: request.url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 120)
         urlRequest.httpMethod = request.method.rawValue
 
@@ -39,7 +45,13 @@ public class HTTPRequester {
             NotificationCenter.default.post(Notification(name: requestDidStartNotification))
             DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
                 NotificationCenter.default.post(Notification(name: requestDidFinishNotification))
-                completionHandler(data, resp, error)
+                
+                if let error = error {
+                    self.delegate?.didReceive(error)
+                } else if let resp = resp as? HTTPURLResponse {
+                    let response = HTTPResponse(statusCode: resp.statusCode, data: data, headerFields: resp.allHeaderFields)
+                    self.delegate?.didReceive(response)
+                }
             })
         })
         task.resume()

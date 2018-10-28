@@ -51,4 +51,12 @@ public extension String {
 
         return url
     }
+    
+    /// Returns the CGSize for self based on the used UIFont
+    ///
+    /// - Returns: CGSize
+    func cgSize(_ font: UIFont = UIFont.systemFont(ofSize: 12)) -> CGSize {
+        let fontAttribute = [NSAttributedString.Key.font: font]
+        return self.size(withAttributes: fontAttribute)
+    }
 }
