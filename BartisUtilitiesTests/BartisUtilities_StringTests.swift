@@ -129,4 +129,39 @@ class BartisUtilities_StringTests: XCTestCase {
         let expectedURL = urlString.url()
         XCTAssertTrue(expectedURL.absoluteString.isEmpty, "Expected the URL to be empty")
     }
+    
+    func test_String_stringCGSize_validString() {
+        //Given
+        let testString = "test string"
+        
+        //When & Then
+        XCTAssertTrue(testString.cgSize().width > 0, "Expected the width to be greater than 0")
+        XCTAssertTrue(testString.cgSize().height > 0, "Expected the height to be greater than 0")
+    }
+    
+    func test_String_stringCGSize_emptyString() {
+        //Given
+        let testString = ""
+        
+        //When & Then
+        XCTAssertEqual(testString.cgSize().width, 0, "Expected the width to be 0")
+        XCTAssertTrue(testString.cgSize().height > 0, "Expected the height to be greater than 0")
+    }
+    
+    func test_String_stringCGSize_nilString() {
+        //Given
+        let testString: String? = nil
+        
+        //When & Then
+        XCTAssertNil(testString?.cgSize(), "Expected the size to be nil")
+    }
+    
+    func test_String_stringCGSize_validString_customFont() {
+        //Given
+        let testString = "test string"
+        
+        //When & Then
+        XCTAssertTrue(testString.cgSize(UIFont(name: "Arial", size: 16)!).width > 0, "Expected the width to be greater than 0")
+        XCTAssertTrue(testString.cgSize(UIFont(name: "Arial", size: 16)!).height > 0, "Expected the height to be greater than 0")
+    }
 }

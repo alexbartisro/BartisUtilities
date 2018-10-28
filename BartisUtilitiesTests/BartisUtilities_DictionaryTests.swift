@@ -24,10 +24,12 @@ class BartisUtilities_DictionaryTests: XCTestCase {
     func test_Dictionary_QueryParams() {
         //Given
         let queryParams = testDictionary.queryString
-        let expectedParams = "?Param2=Value2&Param1=Value1"
+        let expectedParam1 = "Param1=Value1"
+        let expectedParam2 = "Param2=Value2"
 
         //Then
-        XCTAssertTrue(queryParams == expectedParams, "Expected the query params to be identical")
+        XCTAssertTrue((queryParams?.contains(expectedParam1))!, "Expected the query params to be identical")
+        XCTAssertTrue((queryParams?.contains(expectedParam2))!, "Expected the query params to be identical")
     }
 }
 
