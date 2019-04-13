@@ -9,7 +9,7 @@
 import Foundation
 
 public struct HTTPResponse {
-    var statusCode: Int
-    var data: Data?
-    var headerFields: [AnyHashable : Any]
+    public var statusCode: Int
+    public var data: Data?
+    public var headerFields: [AnyHashable : Any]
 }

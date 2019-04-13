@@ -18,7 +18,7 @@ public extension DispatchQueue {
     ///   - delay: Double describing the duration to wait until calling the completion
     ///   - background: Closure describing what to run on the background thread
     ///   - completion: Closure called when the operation on the background thread finished
-    public static func background(delay: Double = 0.0, background: (()->Void)? = nil, completion: (() -> Void)? = nil) {
+    static func background(delay: Double = 0.0, background: (()->Void)? = nil, completion: (() -> Void)? = nil) {
         DispatchQueue.global(qos: .background).async {
             background?()
             if let completion = completion {
