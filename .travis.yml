@@ -6,10 +6,11 @@ notifications:
     on_failure: always
 
 before_install:
+    - brew update
     - rvm install 2.4.5
-    - gem install activesupport -v 4.2.6 --no-ri --no-document --quiet
-    - gem install xcpretty --no-ri --no-document --quiet
-    - gem install xcpretty-travis-formatter --no-ri --no-document --quiet
+    - gem install activesupport --no-document --quiet
+    - gem install xcpretty --no-document --quiet
+    - gem install xcpretty-travis-formatter --no-document --quiet
     - gem install slather
 
 language: objective-c  #1
