@@ -1,233 +1,303 @@
 {
   "warnings": [
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": null,
       "symbol": "HTTPRequestError",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 12,
       "symbol": "HTTPRequest",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 13,
       "symbol": "HTTPRequest.method",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 14,
       "symbol": "HTTPRequest.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 15,
       "symbol": "HTTPRequest.loginString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 16,
-      "symbol": "HTTPRequest.querryParams",
+      "symbol": "HTTPRequest.queryParams",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 18,
       "symbol": "HTTPRequest.headers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
       "line": 19,
       "symbol": "HTTPRequest.urlString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 61,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 23,
+      "symbol": "HTTPRequest.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 24,
+      "symbol": "HTTPRequest.httpBody",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 70,
       "symbol": "Method",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 62,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 71,
       "symbol": "Method.Get",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 63,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 72,
       "symbol": "Method.Put",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 64,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 73,
       "symbol": "Method.Post",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 65,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 74,
       "symbol": "Method.Delete",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 69,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 75,
+      "symbol": "Method.Patch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 79,
       "symbol": "HTTPRequestError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequest.swift",
-      "line": 70,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequest.swift",
+      "line": 80,
       "symbol": "HTTPRequestError.URLInvalidError",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/HTTPRequester.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
       "line": 11,
+      "symbol": "HTTPRequesterDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 12,
+      "symbol": "HTTPRequesterDelegate.didReceive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 13,
+      "symbol": "HTTPRequesterDelegate.didReceive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 16,
       "symbol": "HTTPRequester",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/PropertyLoopable.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 18,
+      "symbol": "HTTPRequester.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 63,
+      "symbol": "requestDidStartNotification",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPRequester.swift",
+      "line": 64,
+      "symbol": "requestDidFinishNotification",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPResponse.swift",
+      "line": 11,
+      "symbol": "HTTPResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPResponse.swift",
+      "line": 12,
+      "symbol": "HTTPResponse.statusCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPResponse.swift",
+      "line": 13,
+      "symbol": "HTTPResponse.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/HTTPResponse.swift",
+      "line": 14,
+      "symbol": "HTTPResponse.headerFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/PropertyLoopable.swift",
       "line": 18,
       "symbol": "PropertyLoopable.allProperties()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/PropertyLoopable.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/PropertyLoopable.swift",
       "line": 19,
       "symbol": "PropertyLoopable.allValues()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 16,
       "symbol": "ThemableTableViewLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 17,
       "symbol": "ThemableTableViewCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 18,
       "symbol": "ThemableTableViewHeader",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 19,
       "symbol": "ThemableTableViewHeaderLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 21,
       "symbol": "ThemableCollectionView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
       "line": 22,
       "symbol": "ThemableCollectionUpperLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 23,
-      "symbol": "ThemableCollectionCellSeparator",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 25,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 24,
       "symbol": "ThemableLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 26,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 25,
       "symbol": "ThemableButton",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 27,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 26,
       "symbol": "ThemablePopupButton",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 28,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 27,
       "symbol": "ThemablePopupView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 29,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 28,
       "symbol": "ThemableUIView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 31,
+      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/Sources/BartisUtilitiesPackage/ThemableViews.swift",
+      "line": 30,
       "symbol": "ThemableSegmentedControl",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 32,
-      "symbol": "ThemableRunwayInformationView",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Alex/Documents/Projects/BartisUtilities/BartisUtilities/BartisUtilities/ThemableViews.swift",
-      "line": 33,
-      "symbol": "ThemableRunwayInformationLabel",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     }
