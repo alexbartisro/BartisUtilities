@@ -7,7 +7,6 @@ notifications:
 
 before_install:
     - brew update
-    - rvm install 2.4.5
     - gem install activesupport --no-document --quiet
     - gem install xcpretty --no-document --quiet
     - gem install xcpretty-travis-formatter --no-document --quiet
