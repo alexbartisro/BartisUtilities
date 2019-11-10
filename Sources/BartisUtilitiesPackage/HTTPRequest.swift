@@ -9,7 +9,7 @@
 import Foundation
 
 //MARK - HTTPRequest
-public class HTTPRequest {
+open class HTTPRequest {
     public private(set) var method: Method!
     public private(set) var url: URL!
     public private(set) var loginString = ""

@@ -13,7 +13,7 @@ public protocol HTTPRequesterDelegate: class {
     func didReceive(_ error: Error)
 }
 
-public class HTTPRequester {
+open class HTTPRequester {
 
     public static weak var delegate: HTTPRequesterDelegate?
     
