@@ -12,4 +12,5 @@ public struct HTTPResponse {
     public var statusCode: Int
     public var data: Data?
     public var headerFields: [AnyHashable : Any]
+    public var identifier: String
 }

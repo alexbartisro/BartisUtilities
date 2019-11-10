@@ -21,6 +21,7 @@ open class HTTPRequest {
     }
 
     public var body: [String: AnyHashable]?
+    public var identifier = ""
     public var httpBody: Data? {
         if let unwrappedBody = body {
             return try? JSONSerialization.data(withJSONObject: unwrappedBody)

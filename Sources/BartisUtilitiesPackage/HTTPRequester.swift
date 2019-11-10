@@ -49,7 +49,7 @@ open class HTTPRequester {
                 if let error = error {
                     self.delegate?.didReceive(error)
                 } else if let resp = resp as? HTTPURLResponse {
-                    let response = HTTPResponse(statusCode: resp.statusCode, data: data, headerFields: resp.allHeaderFields)
+                    let response = HTTPResponse(statusCode: resp.statusCode, data: data, headerFields: resp.allHeaderFields, identifier: request.identifier)
                     self.delegate?.didReceive(response)
                 }
             })
