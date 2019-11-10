@@ -21,10 +21,15 @@ open class HTTPRequest {
     }
 
     public var body: [String: AnyHashable]?
+    public var formData: [String: AnyHashable]?
     public var identifier = ""
     public var httpBody: Data? {
         if let unwrappedBody = body {
             return try? JSONSerialization.data(withJSONObject: unwrappedBody)
+        } else if let unwrappedFormData = formData {
+            let jsonString = unwrappedFormData.reduce("") { "\($0)\($1.0)=\($1.1)&" }
+            let jsonData = jsonString.data(using: .utf8, allowLossyConversion: true)!
+            return jsonData
         }
 
         return nil
