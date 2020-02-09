@@ -57,7 +57,7 @@ open class HTTPRequest {
             newUrl = url + params
         }
 
-        return URL(string: newUrl)
+        return URL(string: newUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
     }
 
     private func createLoginStringFrom(username: String?, password: String?) -> String {
