@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol HTTPRequesterDelegate: class {
+public protocol HTTPRequesterDelegate: AnyObject {
     func didReceive(_ response: HTTPResponse)
     func didReceive(_ error: Error)
 }
